@@ -1,0 +1,94 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{项目经历}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Go 语言微服务开发} % Role
+    {生产级微服务抖音后端 GuGoTik} % 项目名称
+    {2023.08 - 2023.09} % 时间
+    {} %
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {项目描述：微服务分布式抖音后端，具有基于 AGI 的评论风控、AI 聊天、视频智能推送和热度视频引流、集成 AGI 等特色；}
+        \item {技术架构：Golang, Gin, gRPC, Redis, RabbitMQ, OpenTelemetry, Kubernetes, Envoy, Consul, Pyroscope, Open API, K6；}
+        \item {个人职责：}
+          \begin{itemize}
+            \item {基于 Gin 和 gRPC 框架实现视频的评论 RPC 接口和 HTTP 接口，使用基于 Redis 的令牌桶算法实现评论阈值的检测和限制，避免恶意攻击导致服务不可用；}
+            \item {评论风控：通过 RabbitMQ 对评论做异步的风控处理，将文字内容辅以特定的 Prompt 输入到 Open API 中获取该评论的情感倾向，并根据情感倾向做风控处理；}
+            \item {基于 Gin 和 gRPC 框架实现视频的上传 RPC 接口和 HTTP 接口，使用 RabbitMQ 对上传的视频做异步的视频流处理，提升了服务的可用性；}
+            \item {视频流处理：使用 ffmpeg 提取视频封面和音频文件，通过 Open API 从音频文件中提取文字内容，并将文字内容辅以特定的 Prompt 输入到 Open API 中生成视频内容总结和视频关键词，用于后续的视频推荐算法中；}
+            \item {AGI 接入：接入了 Open API 用于评论风控和视频关键词提取，使用延迟队列和死信队列解决了 Open API 访问阈值限制的问题；}
+            \item {多级缓存：使用 Redis + 业务本地缓存实现了多级缓存架构，提高了系统的可用性，解决了 Redis 中的热 key 问题；}
+            \item {基于 Redis 和布隆过滤器实现了登录过滤，减少数据库查询和防止恶意攻击；}
+            \item {使用基于 RabbitMQ 的消息总线采集用户信息用于视频推荐并生成审计表。}
+          \end{itemize}
+        \item {项目成果：获得了第六届字节跳动后端青训营的第一名。}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {测试生成算法开发{\enskip\cdotp\enskip}Android Studio 插件开发{\enskip\cdotp\enskip}需求分析} % Role
+    {面向 Android 的 Kotlin 程序单元测试用例自动生成工具 KotSuite（OPPO 校企合作项目）} % 项目名称
+    {2022.09 - 2023.12} % 时间
+    {} %
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {项目描述：使用「演化算法」和「测试用例重用算法」对 Android 项目中的 Java/Kotlin 代码自动生成单元测试用例；}
+        \item {技术架构：Kotlin、Soot（静态分析）、JaCoCo（覆盖信息分析）、MockK（Kotlin Mocking 框架）、Fernflower（反编译工具）；}
+        \item {个人职责：}
+          \begin{itemize}
+            \item {基于「演化算法」和「测试用例重用算法」实现了测试用例生成算法，是第一个针对 Kotlin 和 Android 测试用例自动生成工具；}
+            \item {开发了一个 Android Studio 插件以优化用户体验；}
+          \end{itemize}
+        \item {项目成果：在 OPPO 内部的实际项目中生成的测试用例的行覆盖率平均值达到了 80\% - 90\%，已在公司内部落地使用。}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Java 语言微服务开发{\enskip\cdotp\enskip}前端开发{\enskip\cdotp\enskip}产品经理} % Role
+    {牛备备工程设备托管租赁平台} % 项目名称
+    {2020.11 - 2021.09} % 时间
+    {} %
+    {
+      \begin{cvitems}
+        \item {项目描述：微服务后端架构，包含一个用于工程设备托管租赁的微信小程序，以及一个用于后台管理的 Web 界面，用户可以在平台发布设备和租赁设备，接入了支付宝支付接口；}
+        \item {技术架构：Java、Spring Boot、uni-app、Vue.js；}
+        \item {个人职责：}
+          \begin{itemize}
+            \item {负责 Java 微服务后端的开发；}
+            \item {参与部分小程序前端界面的开发；}
+            \item {参与项目的需求分析和产品需求稳定的撰写。}
+          \end{itemize}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {智能合约开发{\enskip\cdotp\enskip}前端开发{\enskip\cdotp\enskip}项目经理} % Role
+    {基于以太坊区块链的点赞众筹平台 TokenGo} % 项目名称
+    {2020.10 - 2021.03} % 时间
+    {} %
+    {
+      \begin{cvitems}
+        \item {项目描述：一个基于以太坊区块链的DApp，用户可以在平台上发布自己的创意项目，并能通过点赞（会消耗虚拟货币）为其他用户的创意项目众筹，当项目落地并有收益后，用户可以向点赞过这个向项目的人发放虚拟货币，以达到良性循环；} 
+        \item {技术架构：Truffle、Solidity、Vue.js；}
+        \item {个人职责：}
+          \begin{itemize}
+            \item {使用 Truffle 框架开发了该平台，其中使用 Solidity 语言开发以太坊智能合约，使用 Vue.js 开发前端界面；}
+            \item {参与了智能合约和前端界面的开发，并担任项目经理参与了技术选型和商业计划书的撰写。}
+          \end{itemize}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
