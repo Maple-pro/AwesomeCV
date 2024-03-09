@@ -17,7 +17,7 @@
     {} %
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {项目描述：微服务分布式抖音后端，具有基于 AGI 的评论风控、AI 聊天、视频智能推送和热度视频引流、集成 AGI 等特色；}
+        \item {项目描述：使用 Golang 实现了一个微服务分布式极简版抖音后端，具有视频智能推送和热度视频引流、ChatGPT 集成等特色；}
         \item {技术架构：Golang, Gin, gRPC, Redis, RabbitMQ, OpenTelemetry, Kubernetes, Envoy, Consul, Pyroscope, Open API, K6；}
         \item {个人职责：}
           \begin{itemize}
@@ -31,7 +31,7 @@
             \item {审计日志：使用基于 RabbitMQ 的消息总线采集用户信息用于视频推荐并生成审计表；}
             \item {Feed 流：使用推拉结合的方式实现了视频的 Feed 流，并使用多级缓存和消息队列增强 Feed 流的可用性。}
           \end{itemize}
-        \item {项目成果：获得了第六届字节跳动后端青训营的第一名。}
+        \item {项目成果：实现了一个微服务分布式极简版抖音后端，具有基本的视频功能、互动功能和社交功能；所有接口均全链路无错误，压力测试中90\%的请求时长为 23ms；最终获得了第六届字节跳动后端青训营的第一名。}
       \end{cvitems}
     }
 
@@ -43,8 +43,8 @@
     {} %
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {项目描述：KotSuite 是一个针对 Android 项目的测试用例自动生成工具，使用「演化算法」和「测试用例重用算法」对 Android 项目中的 Java/Kotlin 代码自动生成单元测试用例，包含一个命令行工具和 Android Studio 插件；}
-        \item {技术架构：Java、Soot（静态分析）、JaCoCo（覆盖信息分析）、MockK（Mocking 框架）、Fernflower（反编译工具）、Android Studio 插件开发；}
+        \item {项目描述：目前 OPPO 面临较大的软件交付压力，手动开发单元测试用例的效率低，因此我们开发了一个针对 Android 项目的测试用例自动生成工具 KotSuite，使用「演化算法」和「测试用例重用算法」对 Android 项目中的 Java/Kotlin 代码自动生成单元测试用例，包含一个命令行工具和 Android Studio 插件；}
+        \item {技术架构：Java、Soot（静态分析）、JaCoCo（覆盖信息分析）、Fernflower（反编译工具）、Android Studio 插件开发；}
         \item {个人职责：}
           \begin{itemize}
             \item {基于「演化算法」和「测试用例重用算法」实现了测试用例生成算法，是第一个针对 Kotlin 和 Android 测试用例自动生成工具；}
@@ -58,11 +58,11 @@
   \cventry
     {Java 语言微服务开发{\enskip\cdotp\enskip}后端开发{\enskip\cdotp\enskip}前端开发} % Role
     {牛备备工程设备托管租赁平台} % 项目名称
-    {2022.11 - 2023.09} % 时间
+    {2022.03 - 2023.06} % 时间
     {} %
     {
       \begin{cvitems}
-        \item {项目描述：牛备备是一个用于工程设备托管租赁的平台，支持用户在平台上传设备、下订单租赁设备，以及工作人员审核等功能，接入了支付宝支付接口，后端使用 SpringBoot 微服务架构，前端包含一个用于工程设备托管租赁的微信小程序，以及一个用于后台管理的 Web 界面；}
+        \item {项目描述：为了解决工程设备租赁双方信息不对称、难以即时交易的问题，我们开发了一个用于工程设备托管租赁的平台牛备备，支持用户在平台上传设备、下订单租赁设备，以及工作人员审核等功能，接入了支付宝支付接口，后端使用 SpringBoot 微服务架构，前端包含一个用于工程设备托管租赁的微信小程序，以及一个用于后台管理的 Web 界面；}
         \item {技术架构：Java、SpringBoot、MySQL、Kafka、ElasticSearch、uni-app、Vue.js；}
         \item {个人职责：}
           \begin{itemize}
@@ -73,20 +73,21 @@
             \item {邀请有礼：开发「邀请有礼」营销活动，包括邀请码的生成和识别，结合支付宝 SDK 自动发送邀请奖励等；}
             \item {前端：使用 uni-app 参与部分小程序前端界面的开发。}
           \end{itemize}
+        \item {项目成果：项目落地使用并稳定运行，用户数量达 300 余人，设备数量达 1000 余台。}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
-  \cventry
-    {Golang 开发{\enskip\cdotp\enskip}分布式课程实验} % Role
-    {基于 Raft 共识算法的 KV-store 框架} % 项目名称
-    {2023.12 - 2024.02} % 时间
-    {} %
-    {
-      \begin{cvitems}
-        \item {项目描述：MIT6.824 分布式课程的课程实验，使用 Golang 实现 Raft 协议，并基于 Raft 协议实现一个 multi-raft（Raft 集群） 的 KV 存储服务。}
-      \end{cvitems}
-    }
+  % \cventry
+  %   {Golang 开发{\enskip\cdotp\enskip}分布式课程实验} % Role
+  %   {基于 Raft 共识算法的 KV-store 框架} % 项目名称
+  %   {2023.12 - 2024.02} % 时间
+  %   {} %
+  %   {
+  %     \begin{cvitems}
+  %       \item {项目描述：MIT6.824 分布式课程的课程实验，使用 Golang 实现 Raft 协议，并基于 Raft 协议实现一个 multi-raft（Raft 集群） 的 KV 存储服务。}
+  %     \end{cvitems}
+  %   }
 
 %---------------------------------------------------------
   % \cventry
