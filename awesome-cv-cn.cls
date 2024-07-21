@@ -285,6 +285,10 @@
 % Usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
 
+% Defines writer's blog (optional)
+% Usage: \blog{<url>}
+\newcommand*{\blog}[1]{\def\@blog{#1}}
+
 % Defines writer's github (optional)
 % Usage: \github{<github-nick>}
 \newcommand*{\github}[1]{\def\@github{#1}}
@@ -479,7 +483,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+          \href{\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
@@ -487,6 +491,12 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
         }%
+      \ifthenelse{\isundefined{\@blog}}
+        {}
+        {
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}
+          \href{\@blog}{\faRss\acvHeaderIconSep\@blog}
+        }
       \ifthenelse{\isundefined{\@gitlab}}%
         {}%
         {%
@@ -655,7 +665,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \honordatestyle{#4} & \honorpositionstyle{#1} \quad \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
 % Define an environment for cvskill
