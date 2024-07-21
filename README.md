@@ -43,4 +43,8 @@ fc-list | grep -i "Source Han Sans SC"
 \documentclass[11pt, a4paper]{awesome-cv-cn}
 \usepackage[UTF8]{ctex}
 \setCJKmainfont{Source Han Sans SC}
-``fc-list :outline -f "%{family}\n"`
+```
+
+### 2.3 fontawesome
+
+目前使用版本为 4.4.0，可查看 [Icon List](https://fontawesome.com/v4/icons/)
