@@ -56,7 +56,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[rectangle,noedge,right]{profile-maples.jpg}
 \name{杨}{枫}
-\position{求职意向：研发岗位}
+% \position{求职意向：研发岗位}
 % \address{现居城市：武汉}
 
 \mobile{15549536131}
@@ -89,7 +89,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {杨枫~~~·~~~后端开发}
+  {杨枫~~~·~~~武汉大学}
   {\thepage}
 
 
@@ -97,11 +97,13 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume-cn/教育经历.tex}
+\input{resume-cn-onepage/教育经历-体制.tex}
 % \input{resume-cn/组织经历.tex}
-\input{resume-cn/项目经历.tex}
-\input{resume-cn/实习经历.tex}
-\input{resume-cn/专业技能.tex}
+\input{resume-cn-onepage/获奖信息.tex}
+\input{resume-cn-onepage/实习经历.tex}
+\newpage
+\input{resume-cn-onepage/项目经历.tex}
+\input{resume-cn-onepage/专业技能.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
