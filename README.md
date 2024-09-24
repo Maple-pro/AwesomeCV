@@ -4,14 +4,14 @@
 
 ## 1 概览
 
-| 文件                      | 用途                    |
-| ------------------------ | ----------------------- |
-| resume-maples-cn         | 中文 resume，大厂简历   |
-| resume-maples-cn-multi   | 中文 resume，体制内简历 |
-| resume-maples-cn-onepage | 中文 resume，一页版     |
-| resume                   | 英文 resume 模板        |
-| CV                       | 英文 CV 模板            |
-| coverletter              | 英文 coverletter 模板   |
+| 文件                     | 用途                                |
+| ------------------------ | ----------------------------------- |
+| resume-maples-cn-multi   | 中文 resume，体制内简历             |
+| resume-maples-cn-onepage | 中文 resume，大厂简历               |
+| resume                   | 英文 resume 模板（未使用）          |
+| ~~resume-maples-cn~~     | ~~中文 resume，大厂简历（已废弃）~~ |
+| CV                       | 英文 CV 模板                        |
+| coverletter              | 英文 coverletter 模板               |
 
 ## 2 字体
 
