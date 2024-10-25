@@ -626,6 +626,25 @@
   \end{tabular*}%
 }
 
+% Define an environment for cvarticle
+\newenvironment{cvarticles}{
+  \vspace{\acvSectionContentTopSkip}
+  \begin{center}
+}{
+\end{center}
+}
+% Defind an entry of cv article
+% Usage: \cvarticle{<title>}{<description>}
+\newcommand*{\cvarticle}[2]{
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth} R{0cm}}
+    \entrytitlestyle{#1} \\
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#2}}
+  \end{tabular*}
+}
+
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
